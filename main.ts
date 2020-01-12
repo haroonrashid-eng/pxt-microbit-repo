@@ -16,7 +16,5 @@ enum Classes {
     Coral
 }
 
-
-
-
-
+//% color=000A0F0 weight=100
+namespace mycus
