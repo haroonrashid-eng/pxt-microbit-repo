@@ -1,18 +1,31 @@
 {
-    "name": "pxt-microbit-repo",
+    "name": "pxt-microbit-repo-wellipri",
     "version": "0.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*"
+        "radio": "*",
+        "radio-broadcast": "*"
     },
     "files": [
         "README.md",
-        "main.ts"
+        "main.ts",
+        "ok.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": false,
-    "additionalFilePaths": []
+    "preferredEditor": "tsprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 0,
+                    "whitelist": 1,
+                    "security_level": "SECURITY_MODE_ENCRYPTION_NO_MITM"
+                }
+            }
+        }
+    }
 }
